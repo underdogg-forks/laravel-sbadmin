@@ -16,14 +16,13 @@
 }
 
 #left {
-  @mixin transition(all .3s ease-in-out),
-  width: $SidebarWidth,
-  z-index: 999,
+  width: $SidebarWidth;
+  z-index: 999;
 }
 
 #left {
-  position: absolute,
-  left: -$SidebarWidth,
+  position: absolute;
+  left: -$SidebarWidth;
 }
 
 
@@ -51,7 +50,6 @@
   }
 
   #content {
-    @mixin transition(all .3s ease-in-out),
     overflow: hidden,
   }
 

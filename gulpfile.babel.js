@@ -1,6 +1,7 @@
 import path from "path";
 import gulp from "gulp";
 import del from "del";
+import sass from "gulp-sass";
 import brs from "browser-sync";
 import gulpLoadPlugins from "gulp-load-plugins";
 import app from "./assemblefile";
