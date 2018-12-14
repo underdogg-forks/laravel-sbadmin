@@ -1,7 +1,11 @@
 <?php
 
 Route::get('/', function () {
-    return redirect('admin');
+    return redirect('admincp');
 });
 
-Route::get('/admin/{demopage?}', 'DemoController@demo')->name('demo');
+Route::get('/admincp/{demopage?}', 'DemoController@demo')->name('demo');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

@@ -1,0 +1,78 @@
+@mixin margin($margin:$mar-xs) {
+  margin: $margin;
+}
+@mixin margin-top($margin:$mar-xs) {
+  margin-top: $margin;
+}
+@mixin margin-right($margin:$mar-xs) {
+  margin-right: $margin;
+}
+@mixin margin-bottom($margin:$mar-xs) {
+  margin-bottom: $margin;
+}
+@mixin margin-left($margin:$mar-xs) {
+  margin-left: $margin;
+}
+.m-xs {
+  @include margin();
+}
+.m-xs-t {
+  @include margin-top();
+}
+.m-xs-l {
+  @include margin-left();
+}
+.m-xs-b {
+  @include margin-bottom();
+}
+.m-xs-r {
+  @include margin-right();
+}
+
+.m-sm {
+  @include margin($mar-sm);
+}
+.m-sm-t {
+  @include margin-top($mar-sm);
+}
+.m-sm-l {
+  @include margin-left($mar-sm);
+}
+.m-sm-b {
+  @include margin-bottom($mar-sm);
+}
+.m-sm-r {
+  @include margin-right($mar-sm);
+}
+
+.m-md {
+  @include margin($mar-md);
+}
+.m-md-t {
+  @include margin-top($mar-md);
+}
+.m-md-l {
+  @include margin-left($mar-md);
+}
+.m-md-b {
+  @include margin-bottom($mar-md);
+}
+.m-md-r {
+  @include margin-right($mar-md);
+}
+
+.m-lg {
+  @include margin($mar-lg);
+}
+.m-lg-t {
+  @include margin-top($mar-lg);
+}
+.m-lg-l {
+  @include margin-left($mar-lg);
+}
+.m-lg-b {
+  @include margin-bottom($mar-lg);
+}
+.m-lg-r {
+  @include margin-right($mar-lg);
+}

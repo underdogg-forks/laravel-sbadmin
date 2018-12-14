@@ -1,0 +1,47 @@
+@mixin bg($bg-color:$brand-primary,$color:#fff) {
+  background-color: $bg-color;
+  color: $color !important;
+
+  &.dker, >.dker {
+    background-color: darken($bg-color,8%) !important;
+  }
+
+  &.dk, >.dk {
+    background-color: darken($bg-color,4%) !important;
+  }
+
+  &.lt, >.lt {
+    background-color: lighten($bg-color,4%) !important;
+  }
+
+  &.lter, >.lter {
+    background-color: lighten($bg-color,8%) !important;
+  }
+}
+.bg-red {
+  @include bg(#B90000);
+}
+.bg-brick {
+  @include bg(#CD6723);
+}
+
+.bg-orange {
+  @include bg(#FF4E00);
+}
+.bg-green {
+  @include bg(#4B780A);
+}
+
+.bg-blue {
+  @include bg(#00CAF2);
+}
+
+.bg-black {
+  @include bg(#222);
+}
+.bg-dark {
+  @include bg(#444);
+}
+.bg-light {
+  @include bg(#eee,#333);
+}

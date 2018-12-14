@@ -1,0 +1,78 @@
+@mixin padding($padding:$pad-xs) {
+  padding: $padding;
+}
+@mixin padding-top($padding:$pad-xs) {
+  padding-top: $padding;
+}
+@mixin padding-right($padding:$pad-xs) {
+  padding-right: $padding;
+}
+@mixin padding-bottom($padding:$pad-xs) {
+  padding-bottom: $padding;
+}
+@mixin padding-left($padding:$pad-xs) {
+  padding-left: $padding;
+}
+.p-xs {
+  @include padding();
+}
+.p-xs-t {
+  @include padding-top();
+}
+.p-xs-l {
+  @include padding-left();
+}
+.p-xs-b {
+  @include padding-bottom();
+}
+.p-xs-r {
+  @include padding-right();
+}
+
+.p-sm {
+  @include padding($pad-sm);
+}
+.p-sm-t {
+  @include padding-top($pad-sm);
+}
+.p-sm-l {
+  @include padding-left($pad-sm);
+}
+.p-sm-b {
+  @include padding-bottom($pad-sm);
+}
+.p-sm-r {
+  @include padding-right($pad-sm);
+}
+
+.p-md {
+  @include padding($pad-md);
+}
+.p-md-t {
+  @include padding-top($pad-md);
+}
+.p-md-l {
+  @include padding-left($pad-md);
+}
+.p-md-b {
+  @include padding-bottom($pad-md);
+}
+.p-md-r {
+  @include padding-right($pad-md);
+}
+
+.p-lg {
+  @include padding($pad-lg);
+}
+.p-lg-t {
+  @include padding-top($pad-lg);
+}
+.p-lg-l {
+  @include padding-left($pad-lg);
+}
+.p-lg-b {
+  @include padding-bottom($pad-lg);
+}
+.p-lg-r {
+  @include padding-right($pad-lg);
+}
